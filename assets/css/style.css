@@ -1,7 +1,37 @@
+@font-face {
+    font-family: Iosevka Regular;
+    font-style: normal;
+    src: local("Iosevka Regular"), url(/assets/font/TypoPRO-iosevka-term-regular.woff);
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: Iosevka Regular, sans-serif, monospace;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #586e75;
+    text-align: left;
+    background-color: #fdf6e3;
 }
 
 html {
@@ -9,6 +39,130 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr.ijo {
+    border-bottom: 3px solid #586e75;
+}
+
+.ind {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.kanan {
+    text-align: right;
+}
+
+/** Site header */
+.site-header {
+    border-top: 4px solid #586e75;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 55.95px;
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+}
+
+.site-title,
+.site-title:visited {
+    color: #424242;
+    text-decoration: none;
+}
+
+.site-nav {
+    float: right;
+    line-height: 54px;
+}
+
+.site-nav .nav-trigger {
+    display: none;
+}
+
+.site-nav .menu-icon {
+    display: none;
+}
+
+.site-nav .page-link {
+    color: #111;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.site-nav .page-link:hover {
+    color: #ffff;
+    background: #586e75;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 6px 8px;
+
+}
+
+
+.site-nav .page-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #fdf6e3;
+        border: 1px solid #586e75;
+        border-radius: 5px;
+        text-align: right;
+    }
+
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .site-nav .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .site-nav .menu-icon>svg {
+        fill: #424242;
+    }
+
+    .site-nav input~.trigger {
+        clear: both;
+        display: none;
+    }
+
+    .site-nav input:checked~.trigger {
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px;
+    }
+
+    .site-nav .page-link:not(:last-child) {
+        margin-right: 0;
+    }
 }
 
 .profile {
@@ -32,29 +186,6 @@ html {
     margin-top: -10px;
 }
 
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-    display: block;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #586e75;
-    text-align: left;
-    background-color: #fdf6e3;
-}
 
 .container {
     padding-right: 15px;
@@ -126,7 +257,7 @@ body {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    border-width: 5px;
+    border-width: 4px;
     border-style: solid;
     border-color: #93a1a1;
     border-radius: 2px;
@@ -134,10 +265,7 @@ body {
 }
 
 
-hr.ijo {
-    border-bottom: 3px solid #586e75;
 
-}
 
 .card {
     position: relative;
@@ -174,10 +302,10 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-p {
+/* p {
     margin-top: 0;
     margin-bottom: 1rem;
-}
+} */
 
 img {
     vertical-align: middle;
@@ -276,7 +404,7 @@ svg {
 }
 
 .pad-10 {
-    padding-left: 27px;
+    padding-left: 30px;
 }
 
 .pepet {
