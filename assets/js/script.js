@@ -31,3 +31,11 @@ window.addEventListener("load", () => {
         resetTheme()
     }))
 });
+
+
+// GitHubCalendar(".calendar", "yanuarakhid");
+
+//or enable responsive functionality:
+GitHubCalendar(".calendar", "yanuarakhid", {
+    responsive: true
+});
