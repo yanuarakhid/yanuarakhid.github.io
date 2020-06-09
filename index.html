@@ -18,9 +18,22 @@
         <h5>
             <center>Regard : Akhid Yanuar A.F
         </h5>
-            <script type=”text/javascript”>
-        setTimeout(function(){window.location=”https://yanuarakhid.now.sh”;}, 3000) //wait three seconds before continuing.
-</script>
+        <!-- Replace 10 with the seconds you want to count down from -->
+        <h3 id="countdown">
+            <center>3
+        </h3>
+        <script>
+            var seconds = document.getElementById("countdown").textContent;
+            var countdown = setInterval(function () {
+                seconds--;
+                document.getElementById("countdown").textContent = seconds;
+                if (seconds <= 0) clearInterval(countdown);
+            }, 3000);
+
+            setTimeout(function () {
+                window.location.href = "https://yanuarakhid.now.sh";
+            }, 3000);
+        </script>
     </body>
 
 </html>
